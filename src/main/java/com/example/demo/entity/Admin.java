@@ -1,16 +1,16 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 @AllArgsConstructor
 @RequiredArgsConstructor
+@Getter@Setter
 @Data
 @Entity
-@Table(name = "users")
-public class User {
+@Table(name = "admin")
+public class Admin {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Long id;
@@ -24,8 +24,5 @@ public class User {
     private String email;
     @Column(name = "phone")
     private String phone;
-    @Column(name = "city")
-    private String city;
-
 
 }
