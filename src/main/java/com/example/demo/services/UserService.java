@@ -14,9 +14,8 @@ public class UserService {
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-    public User saveUser (User user){
-        System.out.println(user);
-        return userRepository.save(user);
+    public void saveUser(User user){
+        userRepository.save(user);
     }
 
     public Optional<User> getUserById (Long id){
@@ -24,7 +23,6 @@ public class UserService {
     }
 
     public User getUserByLogin (String login){
-        System.out.println(login);
         return userRepository.findByLogin(login);
     }
 }
