@@ -25,8 +25,6 @@ public class AdminPageController {
     @GetMapping("/adminpage")
     public String adminPage() {
             return "adminpage";
-
     }
-
 
 }

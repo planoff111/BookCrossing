@@ -25,6 +25,7 @@ public class Book {
     @OneToOne
     private User user;
 
+    @Transient
     public List<String> listOfGenres() {
         var listOfGenres = new ArrayList<String>();
         listOfGenres.add("Роман");
