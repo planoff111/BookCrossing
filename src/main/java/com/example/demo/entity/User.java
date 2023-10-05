@@ -26,6 +26,8 @@ public class User {
     private String phone;
     @Column(name = "city")
     private String city;
+    @ManyToOne
+    Book book;
 
 
 }

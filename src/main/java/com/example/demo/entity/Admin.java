@@ -22,7 +22,6 @@ public class Admin {
     private String name;
     @Column(name = "email")
     private String email;
-    @Column(name = "phone")
-    private String phone;
+
 
 }
